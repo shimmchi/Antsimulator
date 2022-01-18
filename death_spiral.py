@@ -392,6 +392,8 @@ class AntColony:
                 if self.GND.isPheromones(x, y):
                     # フェロモンを追いかける(フェロモントレイル)
                     self.pheromonesTrail(n)
+                    # ランダムに方向を変える
+                    self.randomChangeDirection(n)
 
                 # フェロモンが無い時
                 else:
